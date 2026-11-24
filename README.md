@@ -15,13 +15,24 @@ As light as Fork. As pretty as GitKraken. Free, open source, no account needed.
 ![Git](https://img.shields.io/badge/engine-your%20git%20CLI-F05032?logo=git&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 
-[Features](#-features) · [Install](#-install) · [Shortcuts](#%EF%B8%8F-keyboard-shortcuts) · [How it works](#-how-it-works) · [ภาษาไทย](#-ภาษาไทย)
+<a href="https://github.com/pucksaeroi-beep/branchlight/releases/latest/download/Branchlight-mac-arm64.dmg"><img src="https://img.shields.io/badge/Download%20for%20macOS-Apple%20Silicon-000?style=for-the-badge&logo=apple&logoColor=white" alt="Download Branchlight for macOS" height="40" /></a>
+
+<sub>No build needed · free · <a href="#%EF%B8%8F-download">first-launch steps</a> · <a href="https://github.com/pucksaeroi-beep/branchlight/releases">all releases</a></sub>
+
+[Download](#%EF%B8%8F-download) · [Features](#-features) · [Install](#-install) · [Shortcuts](#%EF%B8%8F-keyboard-shortcuts) · [How it works](#-how-it-works) · [ภาษาไทย](#-ภาษาไทย)
 
 <img src="docs/screenshots/hero.png" alt="Branchlight — commit graph, branches and the commit panel" width="100%" />
 
 </div>
 
 ---
+
+## ⬇️ Download
+
+1. **[Download Branchlight-mac-arm64.dmg](https://github.com/pucksaeroi-beep/branchlight/releases/latest/download/Branchlight-mac-arm64.dmg)** for Macs with Apple Silicon (M1 or newer). On an Intel Mac, [build it from source](#-install).
+2. Open the DMG and drag **Branchlight** into **Applications**.
+3. The first time you open it, macOS blocks it because the app is not notarized by Apple. Go to **System Settings → Privacy & Security**, scroll down and click **Open Anyway**. You only do this once.
+   Or run this in Terminal: `xattr -dr com.apple.quarantine /Applications/Branchlight.app`
 
 ## Why Branchlight?
 
@@ -196,6 +207,8 @@ test/             node --test
 ---
 
 ## 🇹🇭 ภาษาไทย
+
+**ดาวน์โหลดไปใช้ได้เลย ไม่ต้อง build เอง:** [Branchlight-mac-arm64.dmg](https://github.com/pucksaeroi-beep/branchlight/releases/latest/download/Branchlight-mac-arm64.dmg) (สำหรับ Mac ชิป M1 ขึ้นไป) เปิดไฟล์แล้วลาก Branchlight ไปไว้ใน Applications ตอนเปิดครั้งแรก macOS จะไม่ยอมให้เปิด ให้ไปที่ **System Settings → Privacy & Security** แล้วกด **Open Anyway** (ทำแค่ครั้งเดียว)
 
 **Branchlight** เป็นโปรแกรม Git แบบมีหน้าตา (GUI) สำหรับ Mac ที่ตั้งใจให้ **เบาและเร็วแบบ Fork** แต่ **สวยแบบ GitKraken**
 

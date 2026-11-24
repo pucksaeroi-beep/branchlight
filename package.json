@@ -14,7 +14,8 @@
     "test": "node --test test/*.test.*",
     "demo": "node scripts/demo-repo.mjs",
     "dist": "vite build && electron-builder --mac --publish never",
-    "install-app": "npm run dist && node scripts/install-app.mjs"
+    "install-app": "npm run dist && node scripts/install-app.mjs",
+    "release": "npm run dist && node scripts/release.mjs"
   },
   "build": {
     "appId": "local.branchlight.app",
