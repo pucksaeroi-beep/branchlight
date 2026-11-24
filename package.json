@@ -1,0 +1,38 @@
+{
+  "name": "branchlight",
+  "productName": "Branchlight",
+  "version": "1.0.0",
+  "description": "A fast, beautiful Git client for macOS — Fork-light, Kraken-pretty",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build",
+    "start": "vite build && electron .",
+    "test": "node --test test/*.test.*",
+    "demo": "node scripts/demo-repo.mjs",
+    "dist": "vite build && electron-builder --mac --publish never",
+    "install-app": "npm run dist && node scripts/install-app.mjs"
+  },
+  "build": {
+    "appId": "local.branchlight.app",
+    "productName": "Branchlight",
+    "directories": { "output": "release", "buildResources": "build" },
+    "files": ["electron/**", "dist/**", "package.json"],
+    "mac": {
+      "target": [{ "target": "dir" }],
+      "category": "public.app-category.developer-tools",
+      "identity": null,
+      "icon": "build/icon.icns",
+      "hardenedRuntime": false,
+      "darkModeSupport": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8",
+    "vite": "^6.4.6"
+  }
+}
